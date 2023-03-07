@@ -1,0 +1,60 @@
+.storyphoto {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid rgb(238, 39, 82);
+    margin-right: 7px;
+  }
+
+  .baslik{
+    text-decoration: none;
+  }
+  .baslik:hover {
+    text-decoration: underline;
+    color: black;
+  }
+  .kalp:hover{
+    color:red;
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  .gonder:hover{
+    color:antiquewhite;
+    opacity: 1;
+    cursor: pointer;
+    transition: 3ms;
+  }
+
+  .yorum:hover{
+    cursor: pointer;
+    color:cadetblue;
+    opacity: 1;
+  }
+
+  .gonderi:hover{
+    cursor: pointer;
+  }
+  .navbarİkon1:hover{
+    cursor: pointer;
+    color: rgb(92, 19, 203);
+    transition: 4ms;
+  }
+
+  .navbarİkon2:hover{
+    cursor: pointer;
+    color: rgb(92, 19, 203);
+    transition: 4ms;
+  }
+
+  .navbarİkon3:hover{
+    cursor: pointer;
+    color: rgb(92, 19, 203);
+    transition: 4ms;
+  }
+
+  .navbarİkon4:hover{
+    cursor: pointer;
+    color: rgb(92, 19, 203);
+    transition: 4ms;
+  }

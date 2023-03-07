@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Instagram Klone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css"/>
+  </head>
+  <body>
+    <!--******************NavBar Start Here**************************-->
+  <nav class="navbar navbar-expand-sm bg-light fixed-top ">
+    <div class="container-fluid" height="200px">
+      <a class="navbar-brand" href="#"><img
+          src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
+      /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <!-- Placeholder Start -->
+      <div class="collapse navbar-collapse mx-5">
+        <form class="form-inline my-2 my-lg-0 d-flex ml-5 d-none d-sm-block">
+          <input
+            class="form-control mr-sm-2 empty"
+            type="search"
+            placeholder="Ara"
+            style="font-family: Arial, FontAwesome; height: 28px; width: 216px;"
+            aria-label="Search"/>
+            <!-- Arama kısmını d-flex ile ortaya alıp soldan 5 birim margin verildi.(d-flex ml-5) -->
+        </form>
+      </div>
+      <!-- Placeholder End -->
+          <!--**************Anasayfa İkonu******-->
+          <li class="navbarİkon1 nav-item mx-3 mt-2">
+              <i class="fa-solid fa-house-chimney"></i>
+          </li>
+          <!--**************Sohbet Balonu******-->
+          <li class="navbarİkon2 nav-item mx-3 mt-2">
+            <i class="fab fa-facebook-messenger fa-lg mr-2 mt-1"></i>
+          </li>
+          <!--********Keşfet butonu***********-->
+          <li class="navbarİkon3 nav-item mx-3 mt-2">
+              <i class="fa-regular fa-compass"></i>
+          </li>
+          <!--******Kalp Butonu**************-->
+          <li class="navbarİkon4 nav-item mx-3 mt-2">
+              <i class="fa-regular fa-heart"></i>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--*****************************NavBar Finish here***************************-->    
+    <div class="container" style="position:absolute; margin-top:15px">
+      <div class="row" style="margin-top: 45px">
+        <div class="col-6 offset-1">
+        <!--************Akış sayfasını sağa kaydırmak için OFFSET kullandım*******-->
+          <div class="card my-2 bg-white rounded">
+            <div class="card-body">
+              <a class="p-3 baslik" href="https://www.instagram.com/kodluyoruz/" style="color: black;">
+                <img class="rounded-circle" src="./images/kodluyoruz.png" style="width:35px; height: 35px;">
+                <strong>Kodluyoruz</strong>
+              </a>
+              <a class="baslik" href="https://www.instagram.com/furkantolgayuce/" style="color:black">
+                <img class="rounded-circle" style="width: 35px; height: 35px;"
+                  src="./images/profile_photo_2.jpeg"><strong>furkantolgayuce</strong>
+              </a>
+              <a class="baslik" style="color: black;" href="https://www.instagram.com/hakanyalcinkaya/">
+                <img class="rounded-circle" style="width: 35px; height: 35px;"
+                  src="./images/hyalcinkaya.jpeg"><strong>hakanyalcinkaya</strong>
+              </a>
+              <a style="color: black;" class="baslik" href="https://www.instagram.com/ozgeacik/">
+                <img class="rounded-circle" style="width: 35px; height: 35px;"
+                  src="./images/özge_acik.jpeg"><strong>özgeacik</strong></a>
+              <a class="baslik" style="color:black" href="https://www.instagram.com/kablosuzkedi/">
+                <img class="rounded-circle ml-5" style="width: 35px; height: 35px;"
+                  src="./images/kablosuz_kedi.png"><strong> kablosuzkedi</strong>
+              </a>
+            </div>
+          </div>
+          <!--************Birinci Gönderi**************************-->
+          <div class="card">
+            <!--*****************Göndericinin kimliğinin olduğu yer*********************-->
+            <div class="card-header bg-light rounded">
+              <img src="./images/profile_photo.jpeg" class="mr-2 rounded-circle" style="width: 35px; height: 35px;" />
+              <span><strong><a href="https://www.instagram.com/adkbyr/" class="baslik" target="_blank"
+                    style="color: black;">adkbyr</a></strong></span>
+              <span class="mt-2">
+                <strong><i class="fa-sharp fa-solid fa-ellipsis"></i></strong>
+              </span>
+            </div>
+            <!--**************************Gönderi*************************-->
+            <img src="https://picsum.photos/id/87/200/100" class="gonderi card-img-top rounded" />
+    
+            <!--**********************Like Comment Send butonlarının olduğu kısım-->
+            <ul class="list-group list-group-horizontal">
+              <!--************Kalp klası tanımlandı ve hover özelliği verildi*******-->
+              <li class="border border-0 list-group-item"><i class="kalp far fa-heart"
+                  style="margin-top:10px; position: relative"></i></li>
+              <!--************Yorum klası tanımlandı ve hover özelliği verildi*******-->
+              <li class="border border-0 list-group-item"><i class="yorum far fa-comment"
+                  style="margin-top:10px; position: relative"></i></li>
+              <!--*************Gonder klası tanımlanarak hover özelliği verildi*********-->
+              <li class="gonder border border-0 list-group-item"><i class="fa-regular fa-paper-plane"
+                  style="margin-top:10px; position: relative"></i></li>
+              <!--*********Margin-left ile BookMark Simgesi sağa kaydırıldı*********-->
+              <li class=" border border-0 list-group-item "><i class="fa-regular fa-bookmark"
+                  style=" margin-left: 435px; margin-top:10px; position: relative"></i></li>
+            </ul>
+            <!--***********************Yorumların olduğu kısım*******************-->
+            <div class="card-body">
+              <img src="./images/profile_photo_2.jpeg" class="mr-2 rounded-circle" style="width: 35px; height: 35px;" />
+              <span><strong><a href="https://www.instagram.com/furkantolgayuce/" class="baslik" target="_blank"
+                    style="color: black;">furkantolgayuce</a></strong> ve <strong>42 diğer kişi</strong> beğendi.</span>
+              <p class="card-text mt-3"><strong>adkbyr</strong> Burası Rize efsane manzara...</p>
+              <p class="card-text">
+                <a class="text-muted" href="#" style="text-decoration: none;">15 yorumun tümünü gör</a>
+              </p>
+              <strong>furkantolgayuce</strong> Bi gün birlikte gideriz belki...</p>
+              <p class="text-muted">10 SAAT ÖNCE</p>
+            </div>
+            <div class="card-footer">
+              <span>
+              <p class=" bg-light text-muted">Yorum Ekle... <a href="#" class="text-primary"
+                  style="--bs-text-opacity: .5;"><strong>Paylaş</strong></a></p>
+                </span>
+            </div>
+          </div>
+        <!--************İkinci Gönderi**************************-->
+          <div class="card">
+          <!--*****************Göndericinin kimliğinin olduğu yer*********************-->
+            <div class="card-header bg-light rounded">
+              <img src="./images/hyalcinkaya.jpeg" class="mr-2 rounded-circle" style="width: 35px; height: 35px;" />
+              <span><strong><a href="https://www.instagram.com/adkbyr/" class="baslik" target="_blank"
+                  style="color: black;">hakanyalcinkaya</a></strong></span>
+              <span class="mt-2">
+                <strong><i class="fa-sharp fa-solid fa-ellipsis"></i></strong>
+              </span>
+            </div class="float-start">
+          <!--**************************Gönderi*************************-->
+            <img src="https://picsum.photos/id/94/200/100" class="gonderi card-img-top rounded" />
+  
+          <!--**********************Like Comment Send butonlarının olduğu kısım-->
+            <ul class="list-group list-group-horizontal">
+            <!--************Kalp klası tanımlandı ve hover özelliği verildi*******-->
+              <li class="border border-0 list-group-item"><i class="kalp far fa-heart"
+                style="margin-top:10px; position: relative"></i></li>
+            <!--************Yorum klası tanımlandı ve hover özelliği verildi*******-->
+              <li class="border border-0 list-group-item"><i class="yorum far fa-comment"
+                style="margin-top:10px; position: relative"></i></li>
+            <!--*************Gonder klası tanımlanarak hover özelliği verildi*********-->
+              <li class="gonder border border-0 list-group-item"><i class="fa-regular fa-paper-plane"
+                style="margin-top:10px; position: relative"></i></li>
+            <!--*********Margin-left ile BookMark Simgesi sağa kaydırıldı*********-->
+              <li class=" border border-0 list-group-item "><i class="fa-regular fa-bookmark"
+                style=" margin-left: 435px; margin-top:10px; position: relative"></i></li>
+            </ul>
+          <!--***********************Yorumların olduğu kısım*******************-->
+            <div class="card-body">
+              <img src="./images/profile_photo_2.jpeg" class="mr-2 rounded-circle" style="width: 35px; height: 35px;" />
+              <span><strong><a href="https://www.instagram.com/furkantolgayuce/" class="baslik" target="_blank"
+                  style="color: black;">furkantolgayuce</a></strong> ve <strong>42 diğer kişi</strong> beğendi.</span>
+              <p class="card-text mt-3"><strong>hakanyalcinkaya</strong> Yoğun bir temponun ardından dinlenmek güzel geldi...</p>
+              <p class="card-text">
+              <a class="text-muted" href="#" style="text-decoration: none;">15 yorumun tümünü gör</a>
+              </p>
+              <strong>furkantolgayuce</strong> Çok güzel görünüyor...</p>
+              <p class="text-muted">15 SAAT ÖNCE</p>
+            </div>
+            <div class="card-footer">
+              <p class=" bg-light text-muted">Yorum Ekle... <a href="#" class="text-primary"
+                style="--bs-text-opacity: .5;"><strong>Paylaş</strong></a></p>
+            </div>
+          </div>
+          </div>
+          <div class="col-3 mt-1" >
+            <!--*******************Sağ taraftaki panel**********************-->
+          <div class="cardrightpanel rounded" style="border: solid">
+            <div class="card-body m-2">
+              <div>
+                <!--**************Kendi adımın olduğu bölme**********-->
+                <a class="nav-link" href="#">
+                  <span style="margin:15px">
+                  <img
+                    src="./images/profile_photo.jpeg"
+                    class=""
+                    style="
+                      width: 60px;
+                      height: 60px;
+                      border-radius: 50%;
+                      border: 2px solid rgb(238, 39, 82);
+                      margin-left: -15px;
+                    "
+                  /><span
+                    class=""
+                    style="
+                      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+                        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+                        'Helvetica Neue', sans-serif;
+                      font-size: 15px;
+                      color: black;
+                      margin-left: 20px;
+                    "
+                    ><strong>ahmetdkbyr</strong>
+                    </span>
+                  </span>
+                </a>
+                <!--*****************Senin için önerilenler baslangic***************-->
+                <div class="mt-2">
+                  <span
+                    class="mt-5"
+                    style="
+                      font-family: 'Segoe UI', Tahoma, Geneva, Verdana,
+                        sans-serif;
+                      font-size: 15px;
+                      color: gray;
+                    "
+                    >Senin İçin Öneriler</span
+                  >
+                  <span
+                    class="postuserfont mt-1"
+                    style="font-size: 12px"
+                    ><strong>Tümünü Gör</strong></span
+                  >
+                </div>
+                <div class="mt-2 ml-2">
+                  <!--**************Birinci önerilen**************-->
+                  <div>
+                    <span
+                      ><img
+                        src= "images/kablosuz_beyin.jpeg"
+                        style="width: 30px; height: 30px; border-radius: 50%"
+                      />
+                    </span>
+                    <a href="https://www.instagram.com/kablosuzbeyin" target="_blank">
+                    <span class="postuserfont ml-2 mt-1"
+                      ><strong>kablosuzbeyin</strong></span
+                    >
+                    <span
+                      class="postuserfont"
+                      style="font-size: 13px; color: #0095f6; margin-top: 5px"
+                      ><strong>Takip Et</strong></span
+                    >
+                    </a>
+                  </div>
+                  <!--**************İkinci önerilen**************-->
+                  <div class="mt-3">
+                    <span
+                      ><img
+                        src="images/codercraft.jpeg"
+                        style="width: 30px; height: 30px; border-radius: 50%"
+                      />
+                    </span>
+                    <a href="https://www.instagram.com/codecraftcom" target="_blank">
+                    <span class="postuserfont ml-2 mt-1"
+                      ><strong>codecraftcom </strong></span
+                    >
+                    <span
+                      class="postuserfont"
+                      style="font-size: 13px; color: #0095f6; margin-top: 5px"
+                      ><strong>Takip Et</strong></span
+                    >
+                    </a>
+                  </div>
+                  <!--**************Üçüncü önerilen**************-->
+                  <div class="mt-3">
+                    <span
+                      ><img
+                        src="images/navlungo.png"
+                        style="width: 30px; height: 30px; border-radius: 50%"
+                      />
+                    </span>
+                    <a href="https://www.instagram.com/navlungotr" target="_blank">
+                    <span class="postuserfont ml-2 mt-1"
+                      ><strong>navlungotr</strong></span
+                    >
+                    <span
+                      class="postuserfont"
+                      style="font-size: 13px; color: #0095f6; margin-top: 5px"
+                      ><strong>Takip Et</strong></span
+                    >
+                    </a>
+                  </div>
+                  <!--**************Dördüncü önerilen**************-->
+                  <div class="mt-3">
+                    <span
+                      ><img
+                        src="images/podfresh.png"
+                        style="width: 30px; height: 30px; border-radius: 50%"
+                      />
+                    </span>
+                    <a href="https://www.instagram.com/podfreshco" target="_blank">
+                    <span class="postuserfont ml-2 mt-1"
+                      ><strong>podfreshco</strong></span
+                    >
+                    <span
+                      class="postuserfont"
+                      style="font-size: 13px; color: #0095f6; margin-top: 5px"
+                      ><strong>Takip Et</strong></span
+                    >
+                  </div>
+                  <!--**************Beşinci önerilen**************-->
+                  <div class="mt-3">
+                    <span
+                      ><img
+                        src="images/kodluyoruzJR.jpeg"
+                        style="width: 30px; height: 30px; border-radius: 50%"
+                      />
+                    </span>
+                    <a href="https://www.instagram.com/kodluyoruz_junior" target="_blank">
+                    <span class="postuserfont ml-2 mt-1"
+                      ><strong>Kodluyoruz Junior</strong></span
+                    >
+                    <span
+                      class="postuserfont"
+                      style="font-size: 13px; color: #0095f6; margin-top: 5px"
+                      ><strong>Takip Et</strong></span
+                    >
+                    </a>
+                  </div>
+                </div>
+                <div class="ml-2 mt-2" style="color: lightgray; font-size: 11px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                  <span><a href="https://about.instagram.com/" target="_blank" class="rightpanellinks">Hakkında</a> <a href="https://help.instagram.com/" target="_blank" class="rightpanellinks">Yardım</a> <a href="https://about.instagram.com/blog/" class="rightpanellinks">Basın</a> <a href="https://www.instagram.com/developer/" class="rightpanellinks">API</a> <a href="https://www.instagram.com/about/jobs/" class="rightpanellinks">İş Fırsatları</a> <a href="https://www.instagram.com/legal/privacy/" class="rightpanellinks">Gizlilik</a></span>
+                    <span><a href="https://www.instagram.com/legal/terms/" class="rightpanellinks">Koşullar</a> <a href="https://www.instagram.com/explore/locations/" class="rightpanellinks">Konumlar</a> <a href="https://www.instagram.com/directory/profiles/" class="rightpanellinks">Başlıca Hesaplar</a> <a href="https://www.instagram.com/directory/hashtags/" class="rightpanellinks">Konu Etiketleri</a> Dil</span>
+                    <p></p>
+                  <p style="font-size: 12px;">© 2023 INSTAGRAM FROM AHMET</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/05cb1c3369.js" crossorigin="anonymous"></script>
+  </body>
+</html>
